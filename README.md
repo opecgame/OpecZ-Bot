@@ -1,2 +1,3 @@
 # Discord-Js
-OpecZ CH Bot
+อ่านก่อนนะครับบบ
+
