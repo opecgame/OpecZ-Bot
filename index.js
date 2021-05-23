@@ -99,6 +99,28 @@ if(command == config.prefix + "hentaithai"){
 
 }
 
+if(message.content == config.prefix + 'reboot-core') {
+  if(message.author.id == config.adminid) {
+    let { MessageEmbed } = require("discord.js");
+    let reboots = new MessageEmbed()
+    .setTitle(`Reboot System`)
+    .setDescription("ทำการเริ่มระบบใหม่อีกครั้ง")
+    .setColor("#F8AA2A");
+  reboots.setTimestamp();
+  message.channel.send(reboots).catch(console.error);
+  setTimeout(() => {
+    process.kill(process.pid, 'SIGTERM')
+  }, 2000)
+} else {
+  let { MessageEmbed } = require("discord.js");
+    let reboota = new MessageEmbed()
+    .setTitle(`Reboot System`)
+    .setDescription('แกไม่มีสิทธิ์')
+    .setColor("#ff0000");
+  reboota.setTimestamp();
+  message.channel.send(reboota).catch(console.error);
+}}	
+	
 if(message.content == config.prefix + "kill"){
 	message.channel.send('https://gfycat.com/cavernoustastybudgie');
 }
