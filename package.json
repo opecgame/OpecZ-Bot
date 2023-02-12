@@ -3,7 +3,7 @@
     "discord-together": "^1.1.11",
     "discord.js": "^12.5.1",
     "nhentai": "^2.0.0",
-    "open-graph-scraper": "^4.8.2",
+    "open-graph-scraper": "^5.0.5",
     "package.json": "^2.0.1",
     "request": "^2.88.2"
   }
